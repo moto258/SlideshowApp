@@ -13,6 +13,10 @@
 		678A93062406F481001E1912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678A93042406F481001E1912 /* Main.storyboard */; };
 		678A93082406F4D1001E1912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678A93072406F4D1001E1912 /* Assets.xcassets */; };
 		678A930B2406F4D2001E1912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678A93092406F4D2001E1912 /* LaunchScreen.storyboard */; };
+		678A93132406F6EF001E1912 /* rest_of_the_pieces.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 678A93122406F6EE001E1912 /* rest_of_the_pieces.jpg */; };
+		678A93152406F6F8001E1912 /* cat_mause_and_me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 678A93142406F6F8001E1912 /* cat_mause_and_me.jpg */; };
+		678A931924070216001E1912 /* leaf_compilation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 678A931824070216001E1912 /* leaf_compilation.jpg */; };
+		678A931B240723AC001E1912 /* ExpandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678A931A240723AC001E1912 /* ExpandViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		678A93072406F4D1001E1912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		678A930A2406F4D2001E1912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		678A930C2406F4D2001E1912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		678A93122406F6EE001E1912 /* rest_of_the_pieces.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rest_of_the_pieces.jpg; sourceTree = "<group>"; };
+		678A93142406F6F8001E1912 /* cat_mause_and_me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_mause_and_me.jpg; sourceTree = "<group>"; };
+		678A931824070216001E1912 /* leaf_compilation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leaf_compilation.jpg; sourceTree = "<group>"; };
+		678A931A240723AC001E1912 /* ExpandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				678A92FE2406F481001E1912 /* AppDelegate.swift */,
 				678A93002406F481001E1912 /* SceneDelegate.swift */,
 				678A93022406F481001E1912 /* ViewController.swift */,
+				678A931A240723AC001E1912 /* ExpandViewController.swift */,
 				678A93042406F481001E1912 /* Main.storyboard */,
 				678A93072406F4D1001E1912 /* Assets.xcassets */,
 				678A93092406F4D2001E1912 /* LaunchScreen.storyboard */,
 				678A930C2406F4D2001E1912 /* Info.plist */,
+				678A93122406F6EE001E1912 /* rest_of_the_pieces.jpg */,
+				678A93142406F6F8001E1912 /* cat_mause_and_me.jpg */,
+				678A931824070216001E1912 /* leaf_compilation.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -125,8 +137,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678A931924070216001E1912 /* leaf_compilation.jpg in Resources */,
 				678A930B2406F4D2001E1912 /* LaunchScreen.storyboard in Resources */,
 				678A93082406F4D1001E1912 /* Assets.xcassets in Resources */,
+				678A93132406F6EF001E1912 /* rest_of_the_pieces.jpg in Resources */,
+				678A93152406F6F8001E1912 /* cat_mause_and_me.jpg in Resources */,
 				678A93062406F481001E1912 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678A931B240723AC001E1912 /* ExpandViewController.swift in Sources */,
 				678A93032406F481001E1912 /* ViewController.swift in Sources */,
 				678A92FF2406F481001E1912 /* AppDelegate.swift in Sources */,
 				678A93012406F481001E1912 /* SceneDelegate.swift in Sources */,

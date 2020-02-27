@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBAction func tapImage(_ sender: Any) {
         performSegue(withIdentifier: "expand", sender: nil)
     }
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var button: UIButton!
     
     var number = 0
@@ -42,9 +44,7 @@ class ViewController: UIViewController {
         } else {
             number += 1
         }
-        if timer == nil {
-            imageView.image = images[number]
-        }
+        imageView.image = images[number]
     }
     
     @IBAction func backImage(_ sender: Any) {
@@ -53,9 +53,7 @@ class ViewController: UIViewController {
         } else {
             number -= 1
         }
-        if timer == nil {
-            imageView.image = images[number]
-        }
+        imageView.image = images[number]
     }
     
     @objc func onTimer(_ timer: Timer) {
@@ -70,10 +68,14 @@ class ViewController: UIViewController {
     @IBAction func startStopTimer(_ sender: UIButton) {
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(onTimer(_:)), userInfo: nil, repeats: true)
+            nextButton.isEnabled = false
+            backButton.isEnabled = false
             button.setTitle("停止", for: .normal)
         } else if self.timer != nil {
             self.timer.invalidate()
             self.timer = nil
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
             button.setTitle("再生", for: .normal)
         }
     }

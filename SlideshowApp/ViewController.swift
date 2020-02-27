@@ -32,6 +32,13 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let expandViewController:ExpandViewController = segue.destination as! ExpandViewController
         expandViewController.image = images[number]
+        if self.timer != nil {
+            self.timer.invalidate()
+            self.timer = nil
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
+            button.setTitle("再生", for: .normal)
+        }
     }
     
     override func didReceiveMemoryWarning() {
